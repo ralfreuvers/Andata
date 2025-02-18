@@ -1,16 +1,30 @@
+# Code Formatting & Linting
 black
 flake8
-ipython
 isort
+
+# Interactive Development
+ipython
 jupyterlab
-loguru
-matplotlib
 notebook
+
+# Logging & CLI Tools
+loguru
+typer
+
+# Data Science & Analysis
 numpy
 pandas
-pip
-python-dotenv
-scikit-learn
+matplotlib
 tqdm
-typer
+python-dotenv
+
+# Signal & Audio Processing
+librosa
+soundfile
+pydub
+audioread
+scipy
+
+# Editable Installation (for local development)
 -e .
