@@ -1,16 +1,18 @@
-class andatum:
-    def __init__(self, brand, model, year):
-        self.brand = brand
-        self.model = model
-        self.year = year
+# External Library Imports
+import librosa
 
-        # load song file into self and store the total waveform
+# Class Definition
+class andatum:
+    def __init__(self,filepath):
+        # Load song file into self, store the total waveform & sample rate
+        self.filepath = filepath
+        self.tseries, self.sr = librosa.load(filepath, sr=None)
 
         # randomly assign the 5 primary frequency signals from the private method to the five personality traits
         # openness, conscientiousness, extraversion, agreeableness, neuroticism
         
     def display_info(self):
-        return f"{self.year} {self.brand} {self.model}"
+        return f"{self.filepath}"
 
     # define a public method to visualize a waveform
 
