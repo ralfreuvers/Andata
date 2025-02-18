@@ -1,8 +1,11 @@
-from myclass import Car
+from andatum import andatum as adt
 
 def main():
-    my_car = Car("Tesla", "Model S", 2023)
-    print(my_car.display_info())
+    # initialize an andatum
+
+    # display the wave form
+
+    # display the 5 primary frequency signals
 
 if __name__ == "__main__":
     main()
